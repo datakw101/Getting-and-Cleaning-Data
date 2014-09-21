@@ -92,7 +92,7 @@ names(X_train) = features
 # Use logical vector sdmean_features to subset the x_test variable 
 X_train = X_train[,sdmean_features]
 
-# Assemble train_combined table and test_combined table from constituent elements    
+# Assemble train_combined table and test_combined table from elements    
 
 test_combined <- cbind(as.data.table(subject_test), y_test,X_test)
 train_combined <- cbind(as.data.table(subject_train), y_train, X_train)
